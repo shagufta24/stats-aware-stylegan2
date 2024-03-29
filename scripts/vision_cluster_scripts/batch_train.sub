@@ -1,0 +1,12 @@
+Executable   = train.sh
+Log          = train_run101023_$(PROCESS).log
+Output       = train_run101023_$(PROCESS).stdout
+Error        = train_run101023_$(PROCESS).stderr
+Request_gpus = 1
+Request_cpus = 3
+Requirements = (Machine=="vision-21.cs.illinois.edu")
+#Requirements = (CUDADeviceName == "NVIDIA A40")
+notify_user = nkamath5@illinois.edu
+notification = always
+Queue
+

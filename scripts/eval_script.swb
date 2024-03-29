@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name="eval_code"
+#SBATCH --output="eval_code.%j.%N.out"
+#SBATCH --error="eval_code.%j.%N.err"
+#SBATCH --partition=cpun1
+#SBATCH --time=8
+
+module load opence/1.2.2
+conda activate public_metric
+
+path1=/home/nkamath/AAPM_DGM_Challenge/fakes/out_128_training_000111_grouped
+# outpf='public_metric_113.csv'
+
+for sub_dir in $path1/*/
+do
+    python KS_stat_metric.py --num_images 8500 --path_to_reals /home/nkamath/AAPM_DGM_Challenge/challenge_data/train_128 --path_to_fakes $sub_dir --to_save_cosine_plots 0 --convert_size 128 --results_dir metric_results_$subdir --n_trials 5
+done
+
+echo "End of eval"
+
+# Author:Nidhish K, Usage: Evaluation of generated images (KS stat) 5 times and storing results in a csv file. Pairs with file Busey_metric.py to work properly

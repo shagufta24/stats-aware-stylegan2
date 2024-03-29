@@ -1,0 +1,9 @@
+Request_gpus = 1 
+Request_cpus = 2
+Requirements = (Machine=="vision-16.cs.illinois.edu")
+#Requirements = (CUDADeviceName == "NVIDIA A40")
+notify_user = nkamath5@illinois.edu
+notification = always
+Queue
+
+

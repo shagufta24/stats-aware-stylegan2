@@ -1,0 +1,11 @@
+Executable   = exe_examine.sh
+Log          = log_$(ClusterId).$(ProcId).log
+Output       = output_$(ClusterId).$(ProcId).stdout
+Error        = errors_$(ClusterId).$(ProcId).stderr
+Request_gpus = 0
+Request_cpus = 1
+Requirements = (Machine=="vision-16.cs.illinois.edu")
+#Requirements = (CUDADeviceName == "NVIDIA A40")
+notify_user = nkamath5@illinois.edu
+notification = always
+Queue

@@ -1,0 +1,97 @@
+absl-py @ file:///root/worker/containers/00000a0pg9o/tmp/build/80754af9/absl-py_1600297573559/work
+aiohttp @ file:///root/worker/containers/00001dbcduq/tmp/build/80754af9/aiohttp_1646806481725/work
+aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
+astunparse==1.6.3
+async-timeout @ file:///tmp/build/80754af9/async-timeout_1637851218186/work
+asynctest==0.13.0
+attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+av==8.0.2
+blinker==1.4
+brotlipy==0.7.0
+cachetools @ file:///tmp/build/80754af9/cachetools_1619597386817/work
+certifi==2021.10.8
+cffi @ file:///root/worker/containers/0000302spsn/tmp/build/80754af9/cffi_1625814737803/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==7.1.2
+cloudpickle==1.3.0
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480661/work
+cryptography @ file:///root/worker/containers/00002s604t5/tmp/build/80754af9/cryptography_1633520406057/work
+dataclasses @ file:///home/conda/feedstock_root/build_artifacts/dataclasses_1628958434797/work
+decorator==4.4.2
+filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_1645136850180/work
+flatbuffers @ file:///tmp/build/80754af9/python-flatbuffers_1614345733764/work
+frozenlist @ file:///root/worker/containers/00000a36e6s/tmp/build/80754af9/frozenlist_1637767153315/work
+future @ file:///home/conda/feedstock_root/build_artifacts/future_1635819753513/work
+gast==0.3.3
+google-auth @ file:///tmp/build/80754af9/google-auth_1604100403705/work
+google-auth-oauthlib @ file:///tmp/build/80754af9/google-auth-oauthlib_1617120569401/work
+google-pasta @ file:///Users/ktietz/demo/mc3/conda-bld/google-pasta_1630577991354/work
+graphsurgeon @ file:///scratch/cuda11/envs/opence/conda-bld/graphsurgeon_1626334044444/work/tensorrt/graphsurgeon/graphsurgeon-0.4.5-py2.py3-none-any.whl
+grpcio @ file:///root/worker/containers/00001iotc6i/tmp/build/80754af9/grpcio_1597424511388/work
+h5py==2.10.0
+horovod==0.21.0
+huggingface-hub @ file:///home/conda/feedstock_root/build_artifacts/huggingface_hub_1641988520462/work
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata @ file:///root/worker/containers/000038e0m5b/tmp/build/80754af9/importlib-metadata_1638542932516/work
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1633637554808/work
+Keras-Preprocessing @ file:///tmp/build/80754af9/keras-preprocessing_1612283640596/work
+lmdb==1.4.1
+Markdown==3.1.1
+more-itertools @ file:///tmp/build/80754af9/more-itertools_1637733554872/work
+multidict @ file:///opt/conda/conda-bld/multidict_1640703759013/work
+networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1617499744980/work
+ninja==1.11.1
+numpy @ file:///root/worker/containers/0000050iqdj/tmp/build/80754af9/numpy_and_numpy_base_1603486566052/work
+nvidia-dali-cuda110 @ file:///scratch/cuda11/envs/opence/conda-bld/dali_1626506242770/work/build/dali/python
+nvidia-dali-tf-plugin-cuda110 @ file:///scratch/cuda11/envs/opence/conda-bld/dali_1626506242770/work/dali_tf_plugin/dali_tf_sdist_build
+oauthlib @ file:///opt/conda/conda-bld/oauthlib_1644332107998/work
+olefile==0.46
+onnx==1.6.0
+onnx-graphsurgeon @ file:///scratch/cuda11/envs/opence/conda-bld/onnx-graphsurgeon_1626333872633/work/tensorrt/onnx_graphsurgeon/onnx_graphsurgeon-0.2.0-py2.py3-none-any.whl
+opencv-python==4.7.0.72
+opt-einsum==3.1.0
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+Pillow @ file:///root/worker/containers/00002q52dqi/tmp/build/80754af9/pillow_1615057350192/work
+pluggy @ file:///root/worker/containers/000022dm3r4/tmp/build/80754af9/pluggy_1615976317614/work
+protobuf==3.11.2
+psutil @ file:///root/worker/containers/00000nakkgb/tmp/build/80754af9/psutil_1612298021683/work
+py @ file:///opt/conda/conda-bld/py_1644396412707/work
+pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyJWT @ file:///root/worker/containers/00003jfhu6i/tmp/build/80754af9/pyjwt_1619651632714/work
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1635333100036/work
+pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
+PySocks @ file:///root/worker/containers/00002ha699u/tmp/build/80754af9/pysocks_1594394604255/work
+pytest==5.4.3
+pytorch-fid==0.3.0
+PyYAML==5.4.1
+regex @ file:///opt/conda/conda-bld/regex_1642021331320/work
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+requests-oauthlib==1.3.0
+rsa @ file:///tmp/build/80754af9/rsa_1614366226499/work
+sacremoses @ file:///home/conda/feedstock_root/build_artifacts/sacremoses_1647361442468/work
+scipy @ file:///root/worker/containers/00000ibsvb0/tmp/build/80754af9/scipy_1641555073389/work
+sentencepiece==0.1.91
+six @ file:///root/worker/containers/00002gu644c/tmp/build/80754af9/six_1605205376945/work
+tabulate @ file:///home/conda/feedstock_root/build_artifacts/tabulate_1614001031686/work
+tensorboard @ file:///scratch/lettk/conda/opencex86/conda-bld/tensorboard_1624645410237/work/tmp_pip_dir
+tensorboard-plugin-wit==1.6.0
+tensorflow==2.4.1
+tensorflow-estimator @ file:///scratch/lettk/conda/opencex86/conda-bld/tensorflow-estimator_1624524200387/work/tensorflow_estimator_pkg/tensorflow_estimator-2.4.0-py2.py3-none-any.whl
+tensorrt @ file:///scratch/cuda11/envs/opence/conda-bld/tensorrt_1626334065457/work/tensorrt/python/tensorrt-7.2.0.13-cp37-none-linux_ppc64le.whl
+termcolor==1.1.0
+tokenizers @ file:///root/worker/containers/000021aimkv/tmp/build/80754af9/tokenizers_1639607842144/work
+torch==1.7.1
+torchtext==0.8.0a0+0f911ec
+torchvision==0.8.2
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1648096753605/work
+transformers @ file:///home/conda/feedstock_root/build_artifacts/transformers_1643665047793/work
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1611751222202/work
+uff @ file:///scratch/cuda11/envs/opence/conda-bld/uff_1626334025321/work/tensorrt/uff/uff-0.6.9-py2.py3-none-any.whl
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug @ file:///home/ktietz/src/ci/werkzeug_1611932622770/work
+wrapt==1.12.1
+yarl @ file:///root/worker/containers/000004uct9f/tmp/build/80754af9/yarl_1606939952634/work
+zipp @ file:///opt/conda/conda-bld/zipp_1641824620731/work

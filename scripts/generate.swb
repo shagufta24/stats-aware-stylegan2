@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name="generate-stylegan2"
+#SBATCH --output="stylegan2-generate.%j.%N.out"
+#SBATCH --error="stylegan2-generate.%j.%N.err"
+#SBATCH --partition=gpux1
+#SBATCH --time=4
+module load opence/1.2.2
+module load cuda/11.0.221
+#pip install ninja
+cd /home/nkamath/AAPM_DGM_Challenge/stylegan2-ada-pytorch
+
+python generate.py --outdir=/home/nkamath/AAPM_DGM_Challenge/fakes/out_128_training_000114_grouped/out_128_training_000114_snapshot000000 --seeds=0-8500 --network=/home/nkamath/AAPM_DGM_Challenge/training-runs/00114-train_128-auto1-gamma2-batch32-noaug-resumecustom/network-snapshot-000000.pkl
+
+python generate.py --outdir=/home/nkamath/AAPM_DGM_Challenge/fakes/out_128_training_000115_grouped/out_128_training_000115_snapshot000000 --seeds=0-8500 --network=/home/nkamath/AAPM_DGM_Challenge/training-runs/00115-train_128-auto1-gamma2-batch32-noaug-resumecustom/network-snapshot-000000.pkl
+
+python generate.py --outdir=/home/nkamath/AAPM_DGM_Challenge/fakes/out_128_training_000116_grouped/out_128_training_000116_snapshot000000 --seeds=0-8500 --network=/home/nkamath/AAPM_DGM_Challenge/training-runs/00116-train_128-auto1-gamma2-batch32-noaug-resumecustom/network-snapshot-000000.pkl
+
+python generate.py --outdir=/home/nkamath/AAPM_DGM_Challenge/fakes/out_128_training_000117_grouped/out_128_training_000117_snapshot000000 --seeds=0-8500 --network=/home/nkamath/AAPM_DGM_Challenge/training-runs/00117-train_128-auto1-gamma2-batch32-noaug/network-snapshot-000000.pkl
+
+python generate.py --outdir=/home/nkamath/AAPM_DGM_Challenge/fakes/out_128_training_000118_grouped/out_128_training_000118_snapshot000000 --seeds=0-8500 --network=/home/nkamath/AAPM_DGM_Challenge/training-runs/00118-train_128-auto1-gamma2-batch32-noaug/network-snapshot-000000.pkl
+
+
+# conda activate public_metric
+# cd /home/nkamath/AAPM_DGM_Challenge/dgm_public_metric
+# python eval_public_metric.py --num_images 7000 --path_to_reals /home/nkamath/AAPM_DGM_Challenge/challenge_data/train --path_to_fakes /home/nkamath/AAPM_DGM_Challenge/stylegan2-ada-pytorch/out_512_training_00085_snapshot00800 --to_save_cosine_plots 1 \
+# --results_dir ./metric_results_stylegan2___out_512_training_00085_snapshot00800/
+
+# python eval_public_metric.py --num_images 7000 --path_to_reals /home/nkamath/AAPM_DGM_Challenge/challenge_data/train --path_to_fakes /home/nkamath/AAPM_DGM_Challenge/stylegan2-ada-pytorch/out_512_training_00086_snapshot00400 --to_save_cosine_plots 1 \
+# --results_dir ./metric_results_stylegan2___out_512_training_00086_snapshot00400/
