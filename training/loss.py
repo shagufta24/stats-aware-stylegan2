@@ -42,7 +42,7 @@ class Loss:
 
 class StyleGAN2Loss(Loss):
     def __init__(self, device, G_mapping, G_synthesis, D, augment_pipe=None, style_mixing_prob=0.9, r1_gamma=10, pl_batch_shrink=2, pl_decay=0.01, pl_weight=2, 
-                 alphas=[0.1], tst_pl_wts_ratio=0, features=['all'], num_random_runs=100, loss_name=None):  
+                 alphas=[0.1], tst_pl_wts_ratio=0, features=['all_materials'], num_random_runs=100, loss_name=None):  
         super().__init__()
         self.device = device
         self.G_mapping = G_mapping
@@ -156,10 +156,10 @@ class StyleGAN2Loss(Loss):
         if 'all_materials' in self.features:
             all_materials = True
 
-        data          = torch.squeeze(data).float()  # data is already expected to be in float, but leaving the .float() here
+        data = torch.squeeze(data).float()  # data is already expected to be in float, but leaving the .float() here
         if all_materials or ('p1_value' in self.features):
             p1 = data.mean()
-            final_features.append(torch.sum(p1, dim=(1,2)))
+            final_features.append(p1)
 
         if all_medical or ('p2_value' in self.features):
             radvars = []
@@ -185,8 +185,7 @@ class StyleGAN2Loss(Loss):
             radial_var = yvalues/nind
             radvars.append(radial_var)
             p2_vec = np.array(radvars)
-            p2 = p2_vec[0]
-            final_features.append(torch.sum(p2, dim=(1,2)))
+            for element in p2_vec[0]: final_features.append(element)
                   
         feature_vectors = torch.stack(final_features, dim=1).squeeze(1)
         if not feature_vectors.isfinite().all():
